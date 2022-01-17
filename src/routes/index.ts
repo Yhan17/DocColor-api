@@ -14,7 +14,9 @@ const limiter = rateLimit({
 })
 
 routes.use(limiter)
-routes.get('/api', (_, res) => {
+
+
+routes.get('/', (_, res) => {
   return res.json({
     'message': 'Server Running'
   })
