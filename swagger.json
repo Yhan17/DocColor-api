@@ -1,0 +1,95 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "DocColors-api",
+    "description": "A simple API, which provides a nice way to document colors in methods",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "/api/",
+      "description": "Default path"
+    }
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "image/png"
+  ],
+  "paths": {
+    "/{color}/square": {
+      "get": {
+        "tags": [
+          "Colored Shapes"
+        ],
+        "summary": "Return colored square",
+        "produces": [
+          "image/png"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "color",
+            "required": true,
+            "description": "Normal Hex or Alpha Hex",
+            "example": "FFF"
+          },
+          {
+            "in": "query",
+            "name": "height",
+            "required": false,
+            "description": "Height of square",
+            "example": "200"
+          },
+          {
+            "in": "query",
+            "name": "width",
+            "required": false,
+            "description": "Width of square",
+            "example": "200"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/{color}/circle/{radius}": {
+      "get": {
+        "tags": [
+          "Colored Shapes"
+        ],
+        "summary": "Return colored circle",
+        "produces": [
+          "image/png"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "color",
+            "required": true,
+            "description": "Normal Hex or Alpha Hex"
+          },
+          {
+            "in": "path",
+            "name": "radius",
+            "required": false,
+            "description": "radius of circle"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
