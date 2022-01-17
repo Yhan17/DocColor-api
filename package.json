@@ -6,7 +6,9 @@
   "license": "MIT",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node index.ts",
+    "start": "node build/index.js",
+    "build": "tsc",
+    "postinstall": "npm run build",
     "dev": "ts-node-dev index.ts"
   },
   "dependencies": {
