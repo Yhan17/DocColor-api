@@ -75,13 +75,15 @@
             "in": "path",
             "name": "color",
             "required": true,
-            "description": "Normal Hex or Alpha Hex"
+            "description": "Normal Hex or Alpha Hex",
+            "example": "FFF"
           },
           {
             "in": "path",
             "name": "radius",
             "required": false,
-            "description": "radius of circle"
+            "description": "radius of circle",
+            "example": "50"
           }
         ],
         "responses": {
