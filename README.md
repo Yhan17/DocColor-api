@@ -10,12 +10,15 @@ URL base da API: ` https://docolor-api.herokuapp.com/api/`
 Definição da url na documentação do método
 
 **Javascript**
+
 [![JSDOC](https://i.imgur.com/NBAMfVx.png)](https://i.imgur.com/NBAMfVx.png)
 
 **Flutter**
+
 [![FLUTTER](https://i.imgur.com/X0b9XZQ.png)](https://i.imgur.com/X0b9XZQ.png)
 
 **Visualização na implementação (O mesmo principio tanto para qualquer linguagem que permite documentação)**
+
 [![View](https://i.imgur.com/AcrLQDh.png)](https://i.imgur.com/AcrLQDh.png)
 
 
